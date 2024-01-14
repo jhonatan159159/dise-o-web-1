@@ -1,0 +1,35 @@
+using System;
+
+class Persona
+{
+    // Atributos
+    public string Nombre { get; set; }
+    public int Edad { get; set; }
+
+    // Constructor
+    public Persona(string nombre, int edad)
+    {
+        Nombre = nombre;
+        Edad = edad;
+    }
+
+    // Método
+    public void Saludar()
+    {
+        Console.WriteLine($"Hola, mi nombre es {Nombre} y tengo {Edad} años.");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        // Crear instancias de la clase Persona
+        Persona persona1 = new Persona("Juan", 25);
+        Persona persona2 = new Persona("María", 30);
+
+        // Acceder a los atributos y métodos de las instancias
+        Console.WriteLine($"{persona1.Nombre} tiene {persona1.Edad} años.");
+        persona2.Saludar();
+    }
+}
