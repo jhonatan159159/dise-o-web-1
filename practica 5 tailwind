@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Turismo por tailwind</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-100">
+
+    <nav class="bg-blue-500 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white font-bold text-xl flex items-center">
+                <i class="fas fa-globe-americas mr-2"></i>
+                Turismo Bolivia
+            </a>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-white flex items-center">
+                    <i class="fas fa-home mr-2"></i>
+                    Inicio
+                </a>
+                <a href="#" class="text-white flex items-center">
+                    <i class="fas fa-info-circle mr-2"></i>
+                    Acerca de
+                </a>
+                <a href="#" class="text-white flex items-center">
+                    <i class="fas fa-map-marker-alt mr-2"></i>
+                    Destinos
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container mx-auto mt-8">
+        <h1 class="text-4xl font-bold mb-6">Destinos Turísticos Uyuni</h1>
+
+  
+        <div class="flex space-x-4">
+   
+            <div class="max-w-md rounded overflow-hidden shadow-lg">
+                <img class="w-full h-64 object-cover" src="salar de uyuni.jpg" alt="Destino 1">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Salar de Uyuni</div>
+                    <p class="text-gray-700 text-base">
+                        El Salar de Uyuni es el desierto de sal más grande del mundo, con una superficie de 10,582 km² y una elevación de 3650 msnm. Además, es la mayor reserva de litio del mundo.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="max-w-md rounded overflow-hidden shadow-lg">
+                <img class="w-full h-64 object-cover" src="aguas termales.png" alt="Destino 2">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Aguas termales y géiseres Uyuni</div>
+                    <p class="text-gray-700 text-base">
+                        Aproximadamente a una hora de la Laguna Colorada hay varios géiseres. Este suministro interminable de agua se escupe del suelo a una temperatura de 90ºC, a través de fumarolas y grietas a través de las cuales a veces incluso lava volcánica erupciona. Es recomendable para la seguridad personal de todos observar esto desde una distancia segura, principalmente debido a la sensibilidad y la falta de estabilidad del terreno.
+                    </p>
+                </div>
+            </div>
+
+ 
+            <div class="max-w-md rounded overflow-hidden shadow-lg">
+                <img class="w-full h-64 object-cover" src="Laguna Colorada.jpg" alt="Destino 3">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Laguna Colorada</div>
+                    <p class="text-gray-700 text-base">
+                        La laguna Colorada es una laguna situada dentro de la Reserva Nacional de Fauna Andina Eduardo Abaroa, en el altiplano potosino cerca de la frontera con Chile. La coloración roja de sus aguas es debida a los sedimentos del color rojo y pigmentos de algunos tipos de algas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-gray-800 text-white p-4 mt-8">
+        <div class="container mx-auto text-center">
+            &copy; 2024 Turismo Bolivia - Todos los derechos reservados
+        </div>
+    </footer>
+
+</body>
+</html>
