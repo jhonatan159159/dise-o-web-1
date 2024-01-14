@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>album de fotos de automoviles</title>
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #2c09f7;
+      color: #f8f3ee;
+      padding: 15px 0;
+      text-align: center;
+    }
+    main {
+      background-color: #0eccee;
+      color: #d8e5e7;
+      margin: 0;
+      padding: 15px;
+    }
+    .pictures {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .pictures img {
+      width: 500px;
+      height: 400px;
+      margin-top: 30px;
+    }
+    .pictures p {
+      color: #063ba5;
+      font-weight: bold;
+    }
+    table {
+      width: 100vw;
+      margin-bottom: 15px;
+      border-collapse: collapse;
+    }
+    table tr th {
+      border: 1px solid #a3bba1;
+      padding: 10px;
+      background-color: #0f31c9;
+      color: rgb(248, 243, 243);
+    }
+    table tr td {
+      border: 1px solid #eef7ef;
+      padding: 8px;
+      text-align: center;
+    }
+    footer {
+      background-color: #2032ac;
+      color: white;
+      padding: 10px 20px;
+      text-align: end;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Album de Fotos de Automoviles</h1>
+  </header>
+
+  <main>
+    <h2>Modelos de Vehiculos</h2>
+    <section class="pictures">
+      <img src="bmw.jpg" alt="BMW">
+      <p>BMW X4</p>
+      <img src="vitara.jpg" alt="Vitara">
+      <p>Suzuki Grand Vitara</p>
+      <img src="hilux.jpg" alt="Hilux">
+      <p>Toyota Hilux</p>
+      <img src="Rolls Royce.jpg" alt="Rolls Royce">
+      <p>Rolls Royce Ghost</p>
+      
+    </section>
+    <section class="table">
+      <table>
+        <tr>
+          <th>Imagenes</th>
+          <th>Descripcion</th>
+        </tr>
+        <tr>
+          <td>BMW</td>
+          <td>BMW X4 M40i:
+            Consumo de combustible en l/100 km (promedio): 8,7–9,5
+            Emisiones de CO2 en g/km (promedio): 198–216</td>
+        </tr>
+        <tr>
+          <td>Suzuki Grand Vitara</td>
+          <td>Motor de cuatro cilindros de 1.5 litros
+            Potencia de 101 Hp y 102 lb-pie de torque
+            Transmisión automática de seis velocidades con paletas de cambio detrás del volante.
+            Sistema de hibridación ligera BoosterGreen de 12 Volts
+            Consumo combinado según fabricante de 19.8 km/l
+            Tracción es delantera.</td>
+        </tr>
+        <tr>
+          <td>Toyota Hilux</td>
+          <td>El modelo viene equipado con un motor de 4 cilindros y 2.7 litros que genera una potencia de 166 caballos de fuerza y 180 lb-pie de torque.</td>
+        </tr>
+        <tr>
+          <td>Rolls Royce</td>
+          <td>En la parte mecánica, este modelo incorpora bajo el cofre un motor V12 de 6.75 litros que entrega 571 caballos de fuerza y 627 lb-pie de torque, que están disponibles desde las 1,600 revoluciones, lo que permite al vehículo de dos toneladas y media acelerar fácilmente de 0 a 100 km/h en tan solo 4.8 segundos, y alcanzar una velocidad máxima limitada de 250 kilómetros por hora.</td>
+        </tr>
+        <tr>
+        
+        </tr>
+      </table>
+    </section>
+  </main>
+
+  <
+</body>
+</html>
