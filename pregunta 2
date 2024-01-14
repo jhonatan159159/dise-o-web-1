@@ -1,0 +1,58 @@
+using System;
+using System.Linq;
+
+class Program
+{
+    static void Main()
+    {
+        SolvePuzzle();
+    }
+
+    static void SolvePuzzle()
+    {
+        string[] nombres = { "Juan", "Carlos", "Pedro" };
+        string[] coloresOjos = { "azul", "verde", "marrón" };
+        string[] deportes = { "fútbol", "baloncesto", "tenis" };
+        string[] mascotas = { "perro", "gato", "pájaro" };
+
+        // Usaremos la función de permutación para probar todas las combinaciones posibles
+        var permutaciones = GetPermutations(coloresOjos, 3);
+
+        foreach (var perm in permutaciones)
+        {
+            var asignacion = new
+            {
+                Juan = new { Ojos = perm[0], Deporte = "", Mascota = "" },
+                Carlos = new { Ojos = perm[1], Deporte = "", Mascota = "" },
+                Pedro = new { Ojos = perm[2], Deporte = "", Mascota = "" }
+            };
+
+            // Restricciones
+            if (asignacion.Juan.Ojos == "azul" && asignacion.Juan.Deporte != "fútbol" &&
+                asignacion.Carlos.Ojos != "verde" && asignacion.Carlos.Deporte != "baloncesto" &&
+                asignacion.Pedro.Deporte == "tenis" && asignacion.Pedro.Mascota == "gato" &&
+                asignacion.Pedro.Ojos != "marrón" && asignacion.Pedro.Deporte != "fútbol" &&
+                asignacion.Carlos.Mascota != "pájaro")
+            {
+                // Solución encontrada
+                Console.WriteLine("Solución encontrada:");
+                Console.WriteLine($"Juan: Ojos({asignacion.Juan.Ojos}), Deporte({asignacion.Juan.Deporte}), Mascota({asignacion.Juan.Mascota})");
+                Console.WriteLine($"Carlos: Ojos({asignacion.Carlos.Ojos}), Deporte({asignacion.Carlos.Deporte}), Mascota({asignacion.Carlos.Mascota})");
+                Console.WriteLine($"Pedro: Ojos({asignacion.Pedro.Ojos}), Deporte({asignacion.Pedro.Deporte}), Mascota({asignacion.Pedro.Mascota})");
+                break;
+            }
+        }
+    }
+
+    // Función para obtener permutaciones
+    static string[][] GetPermutations(string[] array, int length)
+    {
+        if (length == 1)
+            return array.Select(x => new[] { x }).ToArray();
+
+        return GetPermutations(array, length - 1)
+            .SelectMany(x => array.Where(e => !x.Contains(e)),
+                        (t1, t2) => t1.Concat(new[] { t2 }).ToArray())
+            .ToArray();
+    }
+}
