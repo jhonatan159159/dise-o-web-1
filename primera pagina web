@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 3</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="exercise1.html">Inicio</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Contactos</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h1>Coca Cola</h1>
+      <p><strong>Desde 1886.</strong> Es recomendable mantener una alimentación variada, moderada y equilibrada, así como un estilo de vida activo y saludable. Bebida refrescante aromatizada.</p>
+    </section>
+    <section>
+      <h2>Fanta</h2>
+      <p><strong>Con todo el sabor.</strong> 8% zumo de naranja**. Con aromas naturales. Bajo en calorías. Es recomendable mantener una alimentación variada, moderada y equilibrada, así como un estilo de vida activo y saludable. Bebida refrescante de zumo de frutas. Con azúcares y edulcorantes.</p>
+    </section>
+  </main>
+  <footer>
+    <p>Web Design 1</p>
+  </footer>
+</body>
+</html>
