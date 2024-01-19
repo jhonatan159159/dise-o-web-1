@@ -1,0 +1,6 @@
+footer__copyright{
+    display: flex;
+    font-family: 'Lemon', serif;
+    font-size: 1rem;
+    margin-left: 2rem;
+}

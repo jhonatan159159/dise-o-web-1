@@ -1,0 +1,24 @@
+@media screen and (min-width:0){
+    
+
+    .logo{
+
+        display: none;
+        width:150px;
+        height: 200px;
+        
+        
+        }
+    }
+    @media screen and (min-width:750px) {
+
+    .logo{
+        border-radius: 15px;
+        display: block;
+    width: 200px;
+    height: 150px;
+    
+    
+
+
+    }}

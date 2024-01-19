@@ -1,0 +1,9 @@
+.portada__imagen{
+    border-radius:5px;
+    height: 1000px;
+background-image: url(../../img/moto2.avif);
+background-repeat: none;
+width:100%;
+background-size: cover;
+background-position: center;
+}

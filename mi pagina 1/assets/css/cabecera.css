@@ -1,0 +1,34 @@
+/* Bloque: Header */
+.cabecera {
+  align-items:center ;
+    background-color: #1d4ddd;
+    color: #f1e6e6;
+    display:flex;
+  border-radius: 5px;
+  
+    text-align:center;
+    padding: 20px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-image: url("../../assets/img/moto.jpg");
+    
+  }
+  @media screen and(min-width:0) {
+    .cabecera{
+      justify-content: center;
+      padding: 0 1rem;
+  
+    }
+    
+  }
+  @media screen and (min-width:750px) {
+  
+    .cabecera{
+      padding: 0 5rem;
+  justify-content: space-between;
+    }
+  } 
+    
+  
+  
+  

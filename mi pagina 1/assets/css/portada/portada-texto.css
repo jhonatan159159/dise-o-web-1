@@ -1,0 +1,12 @@
+.portada__texto{
+    color: rgb(236, 240, 240);
+    font-family: 'Lemon', serif;
+    font-size: 100px; 
+    width: 100%;
+    text-align:center;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    text-shadow: 0 20px 5px rgba(2, 2, 15, 0.2);
+}
